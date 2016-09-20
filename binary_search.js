@@ -7,15 +7,15 @@ var doSearch = function(array, targetValue) {
     var guess;
     while ( max >= min ) {
     	guess = Math.floor( ( min + max ) / 2 ) ;
-    	console.log(guess);
+    	console.log(guess + " is your next guess");
     	if ( array[guess] == targetValue ) {
     		return guess ;
     	} else if ( array[guess] < targetValue ) {
     		min = guess + 1 ;
-    		console.log("the new min is" + min);
+    		console.log("the new min is " + min);
     	} else if ( array[guess] > targetValue ){
     		max = guess - 1 ;
-    		console.log("the new MAX is" + max);
+    		console.log("the new MAX is " + max);
     	}
     }
 	return -1;
@@ -24,7 +24,7 @@ var doSearch = function(array, targetValue) {
 var primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 
 		41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97];
 
-var result = doSearch(primes, 73);
+var result = doSearch(primes, 7);
 console.log(result);
 
 // Complete the doSearch function so that it implements a binary search, following the pseudo-code below (this pseudo-code was described in the previous article):
