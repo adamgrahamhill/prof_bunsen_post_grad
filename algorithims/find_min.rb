@@ -1,4 +1,4 @@
-def index_of_min_val(array, starting_index)
+def find_index_of_min(array, starting_index)
 	min_val = array[starting_index]
 	min_index = starting_index
 	for i in (starting_index + 1)..(array.length - 1)
@@ -10,4 +10,4 @@ def index_of_min_val(array, starting_index)
 	min_index
 end
 
-puts index_of_min_val([2, 10, 17, 27 , 3], 0)
+#puts find_index_of_min([2, 10, 17, 27 , 3], 0)
