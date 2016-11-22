@@ -10,3 +10,9 @@ except FileNotFoundError as err:
     print(err)
 
 print(emails)
+
+schedule_file = open('schedule.txt', 'r')
+
+schedule = schedule_file.read()
+
+print(schedule)
